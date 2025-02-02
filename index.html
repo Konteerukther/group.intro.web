@@ -1,87 +1,210 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-      .custom-navbar {
-          background-color: #80a6c7 !important; 
-      }
-      .cus-navbar {
-          background-color: #e6e9eb !important; 
-      }
-  </style>
-  </head>
-  <body>
-    <h1>IoTE-sport</h1>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">ROV-Moba888</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำ ราชา lol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- ลิงก์ไปยังไฟล์ CSS -->
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">IoTE-sport</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-    <nav class="navbar navbar-expand-lg custom-navbar border-bottom border-body">
-        <div class="container-fluid d-flex flex-column align-items-start text-start">
-          <a class="navbar-brand" href="#">มาแอ็คไก่อีก4ตัว</a>
-          <img src="player1.png" alt="Murcielago Image" class="img-fluid ms-4 rounded-3" style="max-height: 150px;">
+
+    <!-- ชื่อทีม -->
+    <section class="container my-4">
+        <div class="bg-dark text-white p-3 rounded text-center">
+            <h2>RoV - Moba_888</h2>
         </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg cus-navbar border-bottom border-body">
-        <div class="container-fluid d-flex flex-column align-items-start text-start">
-          <a class="navbar-brand" href="#">ไอจุ๊</a>
-          <img src="player2.png" alt="Murcielago Image" class="img-fluid ms-4 rounded-3" style="max-height: 180px;">
+    </section>
+
+    <!-- ตารางนักแข่ง -->
+    <section class="container">
+        <div class="row card-container"> <!-- เพิ่ม div ครอบการ์ดทั้งหมด -->
+            <!-- Player 1 -->
+            <div class="col-md-12 mb-3 p-3 border rounded player-card">
+                <div class="d-flex align-items-center">
+                    <div class="player-info me-auto"> <!-- ใช้ me-auto เพื่อดันไปซ้ายสุด -->
+                        <h5>พรี่นนท์</h5>
+                        <p>ID: <strong>66011392</strong></p>
+                        <p>Name: <strong>ธุวานนท์ </strong></p>
+                        <p>Lane: <strong>Jungle</strong></p>
+                        <p>Fav Hero:</p>
+                        <div class="fav-heroes d-flex gap-2">  
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                    <span class="hero-text">Nakroth</span>
+                                </div>
+                            </div>
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/murad.jpg');">
+                                    <span class="hero-text">Murad</span>
+                                </div>
+                            </div>
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/butterfly.jpg');">
+                                    <span class="hero-text">Butterfly</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <img src="./images/player1.jpg" class="player-img img-fluid" alt="Player 1">
+                </div>
+            </div>
+            
+
+                       <!-- Player 2 -->
+                       <div class="col-md-12 mb-3 p-3 border rounded player-card">
+                        <div class="d-flex align-items-center">
+                            <div class="player-info me-auto"> <!-- ใช้ me-auto เพื่อดันไปซ้ายสุด -->
+                                <h5>Rachar</h5>
+                                <p>ID: <strong>66010296</strong></p>
+                                <p>Name: <strong>เตชิน </strong></p>
+                                <p>Lane: <strong>Jungle</strong></p>
+                                <p>Fav Hero:</p>
+                                <div class="fav-heroes d-flex gap-2">  
+                                    <div class="hero-item">
+                                        <div class="hero-background" style="background-image: url('./images/gildur.jpg');">
+                                            <span class="hero-text">Gildur</span>
+                                        </div>
+                                    </div>
+                                    <div class="hero-item">
+                                        <div class="hero-background" style="background-image: url('./images/krixi.jpg');">
+                                            <span class="hero-text">Krixi</span>
+                                        </div>
+                                    </div>
+                                    <div class="hero-item">
+                                        <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                            <span class="hero-text">Nakroth</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <img src="./images/player2.jpg" class="player-img img-fluid" alt="Player 2">
+                        </div>
+                    </div>
+
+                        <!-- Player 3 -->
+                        <div class="col-md-12 mb-3 p-3 border rounded player-card">
+                            <div class="d-flex align-items-center">
+                                <div class="player-info me-auto"> <!-- ใช้ me-auto เพื่อดันไปซ้ายสุด -->
+                                    <h5>Player 3</h5>
+                                    <p>ID: <strong>66010524</strong></p>
+                                    <p>Name: <strong>พรชัย แซ่อุ่ย </strong></p>
+                                    <p>Lane: <strong>Jungle</strong></p>
+                                    <p>Fav Hero:</p>
+                                    <div class="fav-heroes d-flex gap-2">  
+                                        <div class="hero-item">
+                                            <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                                <span class="hero-text">Nakroth</span>
+                                            </div>
+                                        </div>
+                                        <div class="hero-item">
+                                            <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                                <span class="hero-text">Murad</span>
+                                            </div>
+                                        </div>
+                                        <div class="hero-item">
+                                            <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                                <span class="hero-text">Butterfly</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <img src="./images/player3.jpg" class="player-img img-fluid" alt="Player 1">
+                            </div>
+                        </div>
+
+            <!-- Player 4 -->
+            <div class="col-md-12 mb-3 p-3 border rounded player-card">
+                <div class="d-flex align-items-center">
+                    <div class="player-info me-auto"> <!-- ใช้ me-auto เพื่อดันไปซ้ายสุด -->
+                        <h5>Player 4</h5>
+                        <p>ID: <strong>66010862</strong></p>
+                        <p>Name: <strong>สุทธา กุญช์วรรณ์</strong></p>
+                        <p>Lane: <strong>Jungle</strong></p>
+                        <p>Fav Hero:</p>
+                        <div class="fav-heroes d-flex gap-2">  
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                    <span class="hero-text">Nakroth</span>
+                                </div>
+                            </div>
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                    <span class="hero-text">Murad</span>
+                                </div>
+                            </div>
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                    <span class="hero-text">Butterfly</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <img src="./images/player4.jpg" class="player-img img-fluid" alt="Player 4">
+                </div>
+            </div>
+            
+            <!-- Player 5 -->
+            <div class="col-md-12 mb-3 p-3 border rounded player-card">
+                <div class="d-flex align-items-center">
+                    <div class="player-info me-auto"> <!-- ใช้ me-auto เพื่อดันไปซ้ายสุด -->
+                        <h5>Player 5</h5>
+                        <p>ID: <strong>66011441</strong></p>
+                        <p>Name: <strong>พิทวัส </strong></p>
+                        <p>Lane: <strong>Jungle</strong></p>
+                        <p>Fav Hero:</p>
+                        <div class="fav-heroes d-flex gap-2">  
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                    <span class="hero-text">Nakroth</span>
+                                </div>
+                            </div>
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                    <span class="hero-text">Murad</span>
+                                </div>
+                            </div>
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                    <span class="hero-text">Butterfly</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <img src="./images/player5.jpg" class="player-img img-fluid" alt="Player 5">
+                </div>
+            </div>
+
+            <!-- เพิ่ม Player อื่นๆ -->
         </div>
-      </nav>  
-      <nav class="navbar navbar-expand-lg custom-navbar border-bottom border-body">
-        <div class="container-fluid d-flex flex-column align-items-start text-start">
-          <a class="navbar-brand" href="#">marika_emmy</a>
-          <img src="player3.png" alt="Murcielago Image" class="img-fluid ms-4 rounded-3" style="max-height: 150px;">
-        </div>
-      </nav>
-      <nav class="navbar navbar-expand-lg cus-navbar border-bottom border-body">
-        <div class="container-fluid d-flex flex-column align-items-start text-start">
-          <a class="navbar-brand" href="#">ปีศาจเอฟ</a>
-          <img src="player4.png" alt="Murcielago Image" class="img-fluid ms-4 rounded-3" style="max-height: 140px;">
-        </div>
-      </nav> 
-      <nav class="navbar navbar-expand-lg custom-navbar border-bottom border-body">
-        <div class="container-fluid d-flex flex-column align-items-start text-start">
-          <a class="navbar-brand" href="#">[^=^]</a>
-          <img src="player5.png" alt="Murcielago Image" class="img-fluid ms-4 rounded-3" style="max-height: 180px;">
-        </div>
-      </nav> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>IoTE-sport &copy; 2025 | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
