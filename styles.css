@@ -4,6 +4,7 @@
     height: 240px;
     border-radius: 15px;
     object-fit: cover;
+    object-position: 0 5%;
 }
 
 /* ปรับแต่งสไตล์ของ Hero */
