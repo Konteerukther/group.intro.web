@@ -32,20 +32,49 @@
             <h2>RoV - Moba_888</h2>
         </div>
     </section>
+    <!-- grid test -->
+    <div class="container">
+      <div class="row" style="border: 3px solid rgb(0, 0, 0);">
+        <div class="col-xxl" style="background: #48bfff;">
+          xxl
+        </div>
+        <div class="col-xl" style="background: #1cfb45;">
+          xl
+        </div>
+        <div class="col-lg" style="background: #f4ec13;">
+          lg
+        </div>
+        <div class="col-md" style="background: #48bfff;">
+          md
+        </div>
+        <div class="col-sm" style="background: #1cfb45;">
+          sm
+        </div>
+
+      </div>
+    </div>
 
     <!-- ตารางนักแข่ง -->
     <section class="container">
-        <div class="row card-container"> <!-- เพิ่ม div ครอบการ์ดทั้งหมด -->
+        <div class="row"> <!-- เพิ่ม div ครอบการ์ดทั้งหมด -->
             <!-- Player 1 -->
-            <div class="col-md-12 mb-3 p-3 border rounded player-card">
-                <div class="d-flex align-items-center">
-                    <div class="player-info me-auto"> <!-- ใช้ me-auto เพื่อดันไปซ้ายสุด -->
-                        <h5>พรี่นนท์</h5>
+            <div class="col-12" style="background: #ffffff;">
+                <div class="row">
+
+                  <div class="col-auto" style="background: #1cfb45;">
+                    <h5>พรี่นนท์</h5>
+                    <img src="./images/player1.jpg" class="player-img img-fluid rounded-circle" alt="Player 1" style="width: 240px;">
+                  </div>
+                  <div class="col-auto" style="background: #48bfff;">
+                    <div class="row"> <!-- ใช้ me-auto เพื่อดันไปซ้ายสุด -->
+                      <div class="col">
                         <p>ID: <strong>66011392</strong></p>
-                        <p>Name: <strong>ธุวานนท์ ช่วยสวัสดิ</strong></p>
+                        <p>Name: <strong>ธุวานนท์ ช่วยสวัสดิ์</strong></p>
                         <p>Lane: <strong>Dark slayer lane</strong></p>
+                      </div>
+                      <div class="col">
                         <p>Fav Hero:</p>
-                        <div class="fav-heroes d-flex gap-2">  
+                        <div class="row" style="gap: 10px;">  
                             <div class="hero-item">
                                 <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
                                     <span class="hero-text">Nakroth</span>
@@ -62,76 +91,75 @@
                                 </div>
                             </div>
                         </div>
-                        
+                      </div>
                     </div>
-                    <img src="./images/player1.jpg" class="player-img img-fluid" alt="Player 1">
+                  </div>
                 </div>
             </div>
             
-
-                       <!-- Player 2 -->
-                       <div class="col-md-12 mb-3 p-3 border rounded player-card">
-                        <div class="d-flex align-items-center">
-                            <div class="player-info me-auto"> <!-- ใช้ me-auto เพื่อดันไปซ้ายสุด -->
-                                <h5>Rachar</h5>
-                                <p>ID: <strong>66010296</strong></p>
-                                <p>Name: <strong>เตชิน rachaJ3K</strong></p>
-                                <p>Lane: <strong>Mid lane</strong></p>
-                                <p>Fav Hero:</p>
-                                <div class="fav-heroes d-flex gap-2">  
-                                    <div class="hero-item">
-                                        <div class="hero-background" style="background-image: url('./images/gildur.jpg');">
-                                            <span class="hero-text">Gildur</span>
-                                        </div>
-                                    </div>
-                                    <div class="hero-item">
-                                        <div class="hero-background" style="background-image: url('./images/krixi.jpg');">
-                                            <span class="hero-text">Krixi</span>
-                                        </div>
-                                    </div>
-                                    <div class="hero-item">
-                                        <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
-                                            <span class="hero-text">Nakroth</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
+            <!-- Player 2 -->
+            <div class="col-sm mb-3 p-3 border rounded player-card">
+            <div class="d-flex align-items-center">
+                <div class="player-info me-auto"> <!-- ใช้ me-auto เพื่อดันไปซ้ายสุด -->
+                    <h5>Rachar</h5>
+                    <p>ID: <strong>66010296</strong></p>
+                    <p>Name: <strong>เตชิน rachaJ3K</strong></p>
+                    <p>Lane: <strong>Mid lane</strong></p>
+                    <p>Fav Hero:</p>
+                    <div class="fav-heroes d-flex gap-2">  
+                        <div class="hero-item">
+                            <div class="hero-background" style="background-image: url('./images/gildur.jpg');">
+                                <span class="hero-text">Gildur</span>
                             </div>
-                            <img src="./images/player2.jpg" class="player-img img-fluid" alt="Player 2">
+                        </div>
+                        <div class="hero-item">
+                            <div class="hero-background" style="background-image: url('./images/krixi.jpg');">
+                                <span class="hero-text">Krixi</span>
+                            </div>
+                        </div>
+                        <div class="hero-item">
+                            <div class="hero-background" style="background-image: url('./images/nakroth.jpg');">
+                                <span class="hero-text">Nakroth</span>
+                            </div>
                         </div>
                     </div>
+                    
+                </div>
+                <img src="./images/player2.jpg" class="player-img img-fluid" alt="Player 2">
+            </div>
+            </div>
 
-                        <!-- Player 3 -->
-                        <div class="col-md-12 mb-3 p-3 border rounded player-card">
-                            <div class="d-flex align-items-center">
-                                <div class="player-info me-auto"> <!-- ใช้ me-auto เพื่อดันไปซ้ายสุด -->
-                                    <h5>Player 3</h5>
-                                    <p>ID: <strong>66010524</strong></p>
-                                    <p>Name: <strong>พรชัย แซ่อุ่ย </strong></p>
-                                    <p>Lane: <strong>Jungle</strong></p>
-                                    <p>Fav Hero:</p>
-                                    <div class="fav-heroes d-flex gap-2">  
-                                        <div class="hero-item">
-                                            <div class="hero-background" style="background-image: url('./images/sinestrea.webp');">
-                                                <span class="hero-text">Sinestrea</span>
-                                            </div>
-                                        </div>
-                                        <div class="hero-item">
-                                            <div class="hero-background" style="background-image: url('./images/Keera.jpg');">
-                                                <span class="hero-text">Keera</span>
-                                            </div>
-                                        </div>
-                                        <div class="hero-item">
-                                            <div class="hero-background" style="background-image: url('./images/paine.jpg');">
-                                                <span class="hero-text">Paine</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
+            <!-- Player 3 -->
+            <div class="col-md-12 mb-3 p-3 border rounded player-card">
+                <div class="d-flex align-items-center">
+                    <div class="player-info me-auto"> <!-- ใช้ me-auto เพื่อดันไปซ้ายสุด -->
+                        <h5>Player 3</h5>
+                        <p>ID: <strong>66010524</strong></p>
+                        <p>Name: <strong>พรชัย แซ่อุ่ย </strong></p>
+                        <p>Lane: <strong>Jungle</strong></p>
+                        <p>Fav Hero:</p>
+                        <div class="fav-heroes d-flex gap-2">  
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/sinestrea.webp');">
+                                    <span class="hero-text">Sinestrea</span>
                                 </div>
-                                <img src="./images/player3.jpg" class="player-img img-fluid" alt="Player 1">
+                            </div>
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/Keera.jpg');">
+                                    <span class="hero-text">Keera</span>
+                                </div>
+                            </div>
+                            <div class="hero-item">
+                                <div class="hero-background" style="background-image: url('./images/paine.jpg');">
+                                    <span class="hero-text">Paine</span>
+                                </div>
                             </div>
                         </div>
+                        
+                    </div>
+                    <img src="./images/player3.jpg" class="player-img img-fluid" alt="Player 1">
+                </div>
+            </div>
 
             <!-- Player 4 -->
             <div class="col-md-12 mb-3 p-3 border rounded player-card">
@@ -200,6 +228,7 @@
             <!-- เพิ่ม Player อื่นๆ -->
         </div>
     </section>
+
 
     <footer class="bg-dark text-white text-center py-3 mt-4">
         <p>IoTE-sport &copy; 2025 | All Rights Reserved</p>
