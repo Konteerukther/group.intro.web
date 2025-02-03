@@ -1,10 +1,10 @@
 /* ทำให้รูปใหญ่ขึ้น */
 .player-img {
-    width: 300px;
-    height: 240px;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 4 / 3; /* หรืออัตราส่วนที่เหมาะสม */
     border-radius: 15px;
     object-fit: cover;
-    object-position: 0 5%;
 }
 
 /* ปรับแต่งสไตล์ของ Hero */
@@ -31,12 +31,12 @@
     border-radius: 10px;
     padding: 100px;
     width: 100%;
-    max-width: 80%; /* ขนาดสูงสุดของการ์ด */
+    max-width: 100%; /* ขนาดสูงสุดของการ์ด */
     margin: 10px auto;
 }
 
 .player-card:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 /* Hero item */
@@ -75,16 +75,28 @@
 
 /* Responsive: ปรับขนาดตามหน้าจอ */
 @media (max-width: 768px) {
+    .player-img {
+        position: absolute;
+        top: +15px; /* เลื่อนขึ้นมา */
+        left: 50%;
+        transform: translateX(-10%);
+        max-width: 250px; /* ปรับขนาดรูปให้เล็กลง */
+
+        aspect-ratio: 3 / 2;
+    
+    }
     .player-card {
-        max-width: 45%;
+        position: relative;
+        padding-top: 80px; /* เผื่อพื้นที่ให้รูป */
+        min-height: 300px; /* ปรับให้การ์ดไม่ยุบตัว */
+        min-width: 300px; /* ปรับให้การ์ดไม่ยุบตัว */
+    }
+    .fav-heroes {
+        margin-top: 30px; /* ขยับ Hero ลงมาให้ดูเป็นระเบียบ */
     }
 }
 
-@media (max-width: 480px) {
-    .player-card {
-        max-width: 100%;
-    }
-}
+
 
 .player-info {
     margin-left: 0; /* ให้ข้อความชิดซ้าย */
@@ -93,7 +105,7 @@
 
 .fav-heroes {
     display: flex; /* ทำให้เรียงเป็นแนวนอน */
-    gap: 10px; /* เพิ่มระยะห่างระหว่างแต่ละตัว */
+    gap: 1px; /* เพิ่มระยะห่างระหว่างแต่ละตัว */
 }
 
 .hero-item {
@@ -128,6 +140,7 @@
     padding: 3px 6px;
     border-radius: 3px;
 }
+
 body{
-    background-color:#cd6969ee;
+    background-color:#000000bd;
 }
